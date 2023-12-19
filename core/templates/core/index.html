@@ -1,0 +1,282 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fortune.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Poppins:wght@800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+      body {
+        margin-right: 10%;
+        margin-left: 10%;
+        background-color: #181818;
+      }
+      p {
+        color:white;
+      }
+      h1 {
+        color:white;
+        font-family: 'Black Ops One', cursive;
+        font-size: 45px;
+      }
+      h2 {
+        color:white;
+        font-family: 'Poppins', cursive;
+        font-size: 45px;
+      }
+      h3 {
+        color:white;
+      }
+      li {
+        color:white;
+      }
+      .profile-image {
+        border-radius: 100%;
+        height: 300px;
+        width: 300px;
+      }
+      .intro {
+        display: inline;
+        margin-top: 10%;
+        margin-bottom: 10%;
+      }
+      #about {
+        margin-top: 10%;
+        margin-bottom: 10%;
+      }
+      #skills {
+        margin-top: 10%;
+        margin-bottom: 10%;
+      }
+      #skills li {
+        display:inline;
+        margin:7.5%;
+        
+      }
+
+      
+      .bank-image {
+        height: 200px;
+      }
+      .shop-image {
+        height: 200px;
+      }
+
+      .grid {
+        display:flex;
+        justify-content:center;
+        gap: 30px;
+        flex-wrap:wrap;
+      }
+      .grid a {
+        text-decoration: none;
+      }
+      .bank-app {
+        {% comment %} width:40%; {% endcomment %}
+        height:25%;
+        {% comment %} margin:10px; {% endcomment %}
+        height: 150px;
+        
+      }
+      .bank-app p {
+        text-align:justify;
+        padding:10px;
+        color:black;
+      }
+      .shop {
+        height: 25%;
+        {% comment %} margin:10px; {% endcomment %}
+        height: 150px;
+      }
+      .shop p {
+        text-align:justify;
+        padding:10px;
+        color:black;
+      }
+      #contact ul {
+        display:flex;
+      }
+      #contact li{
+        margin-right:5%;
+      }
+      .skills-grid {
+        display:flex;
+        justify-content:center;
+        
+        flex-wrap:wrap;
+      }
+      .grid p {
+        color:white;
+      }
+      .inner-div {
+        width:100%;
+      }
+      #contact {
+        margin-top: 30px;
+      }
+      #skills li img {
+        width:30px;
+        height:30px;
+      }
+      #projects {
+        margin-top: 10%;
+        margin-bottom: 10%;
+      }
+      #contact {
+        margin-top: 10%;
+        margin-bottom: 10%;
+      }
+      ul {
+        list-style: none;
+      }
+      @media screen and (max-width: 1045px) {
+        #projects {
+          margin-bottom: 100px
+        }
+        .grid {
+          {% comment %} flex-direction: column; {% endcomment %}
+          margin:0px 20px;
+          gap: 80px;
+        }
+        .bank-app {
+          {% comment %} height:25%; {% endcomment %}
+          height: 150px
+          margin-bottom: 20px;
+          
+        }
+        .shop {
+          height:150px;          
+          
+        }
+
+        .bank-image {
+          height: 150px;
+        }
+
+      }
+      @media screen and (max-width: 500px) {
+        #skills li {
+          display:block;
+        }
+      }
+      
+
+      @media screen and (max-width: 569px) {
+        .bank-image {
+          height: 150px;
+        }
+        .bank-app {
+          height: 150px;
+        }
+        .shop-image {
+          height: 150px;
+        }
+        .shop {
+          height: 150px
+          
+        }
+        
+      }
+      
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        
+        
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+    <div class='intro'>
+      <h1>Hi, <br>I'm Fortune Akano.<br>A Web developer</h1>
+      <img class='profile-image' src="{% static 'profile.jpg' %}">
+    </div>
+    <p>A successful website does three things:<br>
+      It attracts the right kinds of visitors.<br>
+      Guides them to the main services or product you offer.<br>
+      Collect Contact details for future ongoing relation.</p>
+
+    <div id='about'>
+      <h2>about me.</h2>
+      <h3>Fortune Akano</h3>
+      
+      <p>I am a young tech enthusiast certified in web development that help people and firms get closer to acheiving their goals by building functional and beautiful websites</p>
+      <p>I'm a lifelong learner and I'm always looking for new ways to grow and improve my skills.</p>
+
+    </div>
+
+    <div id='skills'>
+      <h2>skills.</h2>
+      <p>Here are some of the technologies I’ve been working with recently:</p>
+      <ul class='skills-grid'>
+        <li><img src="{% static 'html.png' %}">HTML</li>
+        <li><img src="{% static 'css.png' %}">CSS</li>
+        <li><img src="{% static 'javascript.png' %}">JavaScript</li>
+        <li><img src="{% static 'tailwind.png' %}">Tailwind</li>
+        <li><img src="{% static 'python.png' %}">Python</li>
+        <li><img src="{% static 'django.png' %}">Django</li>
+        <li><img src="{% static 'bootstrap.png' %}">Bootstrap</li>
+        <li><img src="{% static 'git.png' %}">Git</li>
+        <li><img src="{% static 'github.png' %}">Github</li>
+        <li><img src="{% static 'postgresql.png' %}">Postgrsql</li>
+        <li><img src="{% static 'figma.png' %}">Figma</li>
+      </ul>
+    </div>
+
+    <div id='projects'>
+      <h2>projects.</h2>
+      <div class='grid'>
+          <div class='bank-app'>
+            <a href='https://rhiemann-bank.onrender.com/' target='_blank'>
+            <img class='bank-image' src="{% static 'bank.png' %}">
+            <p>A bank app that can send money to other users on the platform</p>
+            </a>
+          </div>
+          <div class='shop'>
+            <a href='https://django-shop.onrender.com/' target='_blank'>
+            <img class='shop-image' src="{% static 'shop.png' %}">
+            <p>An online store, any one can login, post, and add items to cart</p>
+            </a>
+          </div>
+        
+      </div>
+    </div>
+    
+    <div id='contact'>
+      <h2>contact me.</h2>
+      <p>If you would like to get in touch or book me reach out to me on these platforms</p>
+      <ul>
+        <a href='https://github.com/fortunejr' target='_blank'><li><img class='' src="{% static 'github.png' %}"></li></a>
+        <a href='https://twitter.com/lordakano' target='_blank'><li><img class='' src="{% static 'x.png' %}"></li></a>
+        <a href='mailto:lorddakano@gmail.com' target='_blank'><li><img class='' src="{% static 'mail.png' %}"></li></a>
+        <a href='https://www.linkedin.com/in/fortune-akano-138448261/' target='_blank'><li><img class='' src="{% static 'linkedin.png' %}"></li></a>
+      </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
