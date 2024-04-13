@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Fortune Akano | Web Developer</title>
+    <title>Fortune.</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Poppins:wght@800&display=swap" rel="stylesheet">
@@ -89,7 +89,7 @@
       }
       .shop {
         height: 25%;
-        {% comment %} margin:10px; {% endcomment %}
+        margin:10px; 
         height: 150px;
       }
       .shop p {
@@ -213,7 +213,7 @@
     </nav>
     <div class='intro'>
       <h1>Hi, <br>I'm Fortune Akano.<br>A Web developer</h1>
-      <img class='profile-image' src="{% static 'profile.jpg' %}">
+      <img class='profile-image' src="{% static 'me.jpeg' %}">
     </div>
     <p>A successful website does three things:<br>
       It attracts the right kinds of visitors.<br>
@@ -252,14 +252,20 @@
       <div class='grid'>
           <div class='bank-app'>
             <a href='https://rhiemann-bank.onrender.com/' target='_blank'>
-            <img class='bank-image' src="{% static 'bank.PNG' %}">
+            <img class='bank-image' src="{% static 'bank.png' %}">
             <p>A bank app that can send money to other users on the platform</p>
             </a>
           </div>
           <div class='shop'>
             <a href='https://django-shop.onrender.com/' target='_blank'>
-            <img class='shop-image' src="{% static 'shop.PNG' %}">
+            <img class='shop-image' src="{% static 'shop.png' %}">
             <p>An online store, any one can login, post, and add items to cart</p>
+            </a>
+          </div>
+          <div class='shop'>
+            <a href='https://mikeshoes.onrender.com/' target='_blank'>
+            <img class='shop-image' src="{% static 'mikeshoes.png' %}">
+            <p>An online shoe store for one of my clients. Fully functional and responsive</p>
             </a>
           </div>
         
@@ -271,7 +277,7 @@
       <p>If you would like to get in touch or book me reach out to me on these platforms</p>
       <ul>
         <a href='https://github.com/fortunejr' target='_blank'><li><img class='' src="{% static 'github.png' %}"></li></a>
-        <a href='https://twitter.com/lordakano' target='_blank'><li><img class='' src="{% static 'x.png' %}"></li></a>
+        <a href='https://wa.link/6weoaa' target='_blank'><li><img class='' src="{% static 'whatsapp3.png' %}"></li></a>
         <a href='mailto:lorddakano@gmail.com' target='_blank'><li><img class='' src="{% static 'mail.png' %}"></li></a>
         <a href='https://www.linkedin.com/in/fortune-akano-138448261/' target='_blank'><li><img class='' src="{% static 'linkedin.png' %}"></li></a>
       </ul>
